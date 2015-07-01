@@ -142,7 +142,7 @@
   
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  
+
   font-size: 40px;
   margin: 5px;
 }
@@ -177,10 +177,6 @@
   height: 470px;
 }
 
-#lovehas {
-  background-color: #d40000;
-}
-
 #featart {
   text-align: left;
   background-image: url('http://tinyurl.com/nc8ph8y');
@@ -189,8 +185,42 @@
 }
 
 #bag-to-diff {
-  background-color: #aaaaaa;
+  background-image: url("http://thumbs.dreamstime.com/x/recycling-background-10125370.jpg");
   text-align: left;
+}
+
+#bag-to-diff h1 {
+  margin-top: -20px;
+}
+
+#bag-to-diff h2 {
+  margin-top: 90px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+}
+
+#bag-to-diff h3 {
+  color: #ffffff;
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+#bag-to-diff a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+
+#YE {
+  background-image: url('file:///Users/Gavin/Desktop/IMG_0428.jpg');
+  background-position: 50% 50%;
+}
+
+#YE h1 {
+  font-size: 80px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
 }
 
 #drugs {
@@ -198,32 +228,37 @@
 }
 
 #drugs h1 {
+  text-align: center;
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
-  font-size: 90px;
+  font-size: 110px;
   text-transform: uppercase;
   color: #000000;
   text-shadow: 0px 0px #000000;
 }
 
 #drugs h2 {
-  margin-top: -20px;
+  text-align: center;
+  margin-top: -30px;
   font-family: 'Hammersmith One', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #000000;
   text-shadow: 0px 0px #000000;
 }
 
 #drugs p, #drugs a {
+  font-family: 'Hammersmith One', sans-serif;
   color: #000000;
   text-shadow: 0px 0px #000000;
 }
 
 .slide-feature img {
-  margin-top: 112px;
-  margin-bottom: 28px;
+  height: 280px;
+  width: 380px;
+  margin-top: -50px;
+  margin-bottom: 0px;
 }
 
 .slide-feature a {
@@ -291,12 +326,30 @@
 
 .neighborhood-guides {
     background-color: #dff3fb;
-    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 20px;
 }
+
+.neighborhood-guides:first-child {
+    padding-bottom: 50px;
+}
+
+
+.neighborhood-guides:not(:first-child) > .container {
+  padding: 20px 20px 20px 20px;
+  background-color: #c9dbf2;
+}
+
+#whatshappening, .neighborhood-guides:nth-child(4) {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-family: "Hammersmith One", sans-serif;
+}
+
 
 .neighborhood-guides h2 {
     color: #393c3d;
-    font-size: 24px;
+    font-size: 48px;
 }
 
 .neighborhood-guides p {
