@@ -1,5 +1,10 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .nav {
-  background-color: #dff3fb;
+  background-color: #e3f6f6;
 }
 
 .nav a {
@@ -18,7 +23,7 @@
   text-transform: uppercase;
 }
 
-.nav li {
+.nav li, .learn-more li {
   display: inline;
 }
 
@@ -32,14 +37,18 @@
   height: 35px;
 }
 
+.learn-more li a img {
+  width: 50px;
+  height: 50px;
+}
+
 .header {
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.95);
-  
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  
   font-size: 17px;
-  margin-left: 70px;
+  margin-left: -6.5%;
 }
 
 
@@ -70,7 +79,7 @@
 }
 
 .menu .active {
-  background-color: #cce0ff;
+  background-color: #e3f6f6;
   color: #ffffff;
 }
 
@@ -80,6 +89,7 @@
   font-size: 16px;
   margin-top: 5px;
   min-width: 105px;
+  text-align: left;
 }
 
 .dropdown-menu li a {
@@ -110,20 +120,16 @@
 }
 
 .active-slide {
-    display: block;
+  display: block;
 }
 
 .active-nav-bar {
-    display: block;
-}
-.slide-copy {
-  text-shadow: 1px 1px #000000;
+  display: block;
 }
 
 
 .slide-copy a {
-  text-shadow: 1px 1px #000000;
-  color: #ffffff;
+  color: #0000aa;
 }
 
 .slide-copy h1 {
@@ -132,7 +138,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 550;
   
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 90px;
   margin-bottom: 0px;
 }
@@ -177,6 +183,13 @@
   height: 470px;
 }
 
+#home h1, #home p, #home a {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 30px;
+  color: #ffffff;
+  text-shadow: 1px 1px #000000;
+}
+
 #featart {
   text-align: left;
   background-image: url('http://tinyurl.com/nc8ph8y');
@@ -184,8 +197,21 @@
   height: 470px;
 }
 
+#featart .slide-copy {
+  background-color: rgba(12, 12, 12, .7);
+}
+
+#featart h1 {
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+#featart p {
+  margin-top: 20px;
+}
+
 #bag-to-diff {
-  background-image: url("http://thumbs.dreamstime.com/x/recycling-background-10125370.jpg");
+  background-image: url("http://tinyurl.com/p3z3pwn");
   text-align: left;
 }
 
@@ -200,8 +226,8 @@
   font-size: 70px;
 }
 
-#bag-to-diff h3 {
-  color: #ffffff;
+#bag-to-diff p {
+  color: #000000;
   margin-top: 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
@@ -256,7 +282,7 @@
 
 .slide-feature img {
   height: 280px;
-  width: 380px;
+  width: 400px;
   margin-top: -50px;
   margin-bottom: 0px;
 }
@@ -264,11 +290,9 @@
 .slide-feature a {
   display: block;
   color: #6fc5e0;
-  
   font-family: "HelveticaNeueMdCn", Helvetica, sans-serif;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
-  
   font-size: 20px;
 }
 
@@ -276,6 +300,7 @@
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
+  background-color: #c3e1c3;
 }
 
 .arrow-prev {
@@ -310,49 +335,80 @@
   color: #363636;
 }
 
-.learn-more {
-  background-color: #f7f7f7;
-}
-
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.learn-more a {
-  color: #00b0ff;
-}
 
 .neighborhood-guides {
-    background-color: #dff3fb;
-    padding-bottom: 20px;
+  background-color: #e3f6f6;
+  padding-bottom: 20px;
 }
 
 .neighborhood-guides:first-child {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 
 .neighborhood-guides:not(:first-child) > .container {
   padding: 20px 20px 20px 20px;
-  background-color: #c9dbf2;
+  background-color: #c3e1c3;
 }
 
-#whatshappening, .neighborhood-guides:nth-child(4) {
+.neighborhood-guides:nth-child(4) > .container {
+  background-image: url(file:///Users/Gavin/Desktop/image.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#whatshappening h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 70px;
   font-family: "Hammersmith One", sans-serif;
 }
 
-
-.neighborhood-guides h2 {
-    color: #393c3d;
-    font-size: 48px;
+.neighborhood-guides:nth-child(2) h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .neighborhood-guides p {
-    font-size: 15px;
-    margin-bottom: 13px;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.neighborhood-guides h2 {
+  color: #393c3d;
+  font-size: 48px;
+}
+
+.learn-more {
+  background-color: #c3e1c3;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #0000ff;
+  text-align: left;
+  font-size: 18px;
+}
+
+
+#sponsors h1 {
+  text-align: left;
+  font-size: 25px;
+  font-family: "Shift", sans-serif;
+  font-weight: bold;
+}
+
+#sponsors p {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
 }
