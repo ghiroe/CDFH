@@ -12,8 +12,8 @@ var main = function() {
     }
     
     nextSlide.css({left:'100%', display:'block'});
-    currentSlide.animate({left:'-100%'}).removeClass('active-slide');
-    nextSlide.animate({left:'0'}).addClass('active-slide');
+    currentSlide.animate({left:'-100%'}, "slow").removeClass('active-slide');
+    nextSlide.animate({left:'0'}, "slow").addClass('active-slide');
 
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
@@ -33,8 +33,8 @@ var main = function() {
     }
     
     nextSlide.css({left:'100%', display:'block'});
-    currentSlide.animate({left:'-100%'}).removeClass('active-slide');
-    nextSlide.animate({left:'0'}).addClass('active-slide');
+    currentSlide.animate({left:'-100%'}, "slow").removeClass('active-slide');
+    nextSlide.animate({left:'0'}, "slow").addClass('active-slide');
     currentDot.removeClass('active-dot');
     nextDot.addClass('active-dot');
   });
@@ -53,9 +53,8 @@ var main = function() {
     }
     
     prevSlide.css({left:'-100%', display:'block'});
-    currentSlide.animate({left:'100%'}).removeClass('active-slide');
-    prevSlide.animate({left:'0'}).addClass('active-slide');
-
+    currentSlide.animate({left:'100%'}, "slow").removeClass('active-slide');
+    prevSlide.animate({left:'0'}, "slow").addClass('active-slide');
     currentDot.removeClass('active-dot');
     prevDot.addClass('active-dot');
   });
